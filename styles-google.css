@@ -1,13 +1,19 @@
-.container{
-    font-family: sans-serif;
-    color: #202124;
-    font-size: 14px;
-}
 
 body{
     width: 100%;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Decidi incluir una clase que contuviera todos los elementos de la pagina para mayor facilidad de cambios en el futuro, recomendacion
+en varios blogs. */
+
+.container{
+    color: #202124;
+    font-size: 14px;
+}
+
+/* Inicio de clases de header */
 
 #navegation-bar{
     height: 4.286rem;
@@ -94,6 +100,10 @@ border-radius: 2rem;
     border-width: 0.036rem;
 }
 
+/* Fin de clases header */
+
+/* Inicio de clases del Logo */
+
 .box-logo{
     display: flex;
     width: 100%;
@@ -101,20 +111,24 @@ border-radius: 2rem;
     align-items: center;
 }
 
-.logo-google{
-    height: 10%;
+#logo{
+    height: 6%;
     width: 20%;
     max-width: 21.429rem;
-    padding-top: 3%;
+    padding-top: 0.5%;
 }
 
-form{
+/* Fin de clases del logo */
+
+/* Inicio de clases de barra de navegacion y botones */
+
+#form{
     padding: 1.4rem;
     width: auto;
 }
 
 .elements-search{
-    margin: 0 26.5rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -148,10 +162,10 @@ form{
     margin: 0.714rem 0;
 }
 
-#seeker{
+#input-search{
     height: auto;
-    width: 30.857rem;
-    border-color: #ffffff;
+    width: 27.857rem;
+    border: 0;
     padding: 0.357rem;
     padding-top: 0.714rem;
     resize: none;
@@ -160,7 +174,7 @@ form{
     max-width: 30.857rem;
 }
 
-#seeker:focus{
+#input-search:focus{
     outline: none;
 }
 
@@ -196,6 +210,8 @@ form{
     padding: 0.357rem;
 }
 
+/* Botones de busqueda */
+
 .bottoms{
     display: flex;
     justify-content: center;
@@ -203,43 +219,31 @@ form{
     margin-top: 1.786rem;
 }
 
-.bottom-google{
-    width: auto;
-    height: 2.571rem;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0.786rem 0.286rem;
-    padding: 0 1.143rem;
-    border: 0.071rem;
+.btn-search{
+    display: flex;
+    width: 9rem;
+    height: 2.1rem;
     background-color: #f8f9fa;
-    border-color: #dadce0;
+    border: 0 solid #ececec;
+    color: #000000;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0.450rem;
+    border-radius: 0.175rem;
 }
 
-.bottom-lucky{
-    width: auto;
-    height: 2.571rem;
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    margin: 0.786rem 0.286rem;
-    padding: 0 1.143rem;
-    border: 0.071rem;
-    border-color: #dadce0;
-    background-color: #f8f9fa;
-}
-
-.bottom-lucky:hover{
-    box-shadow: 0 0 0.214rem rgb(88, 88, 88);
+.btn-search:hover{
+    box-shadow: 0 0 0.214rem rgb(197, 197, 197);
     border-radius: 0.2rem;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.143rem;
+    border-color: rgb(228, 228, 228);
+    border-width: 0.020rem;
 }
 
-.bottom-google:hover{
-    box-shadow: 0 0 0.214rem rgb(88, 88, 88);
-    border-radius: 0.2rem;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.143rem;
-}
+/* Fin de clases de barra de busqueda y botones */
+
+
+/* Inicio de clases del pie de pagina */
 
 footer{
     position: absolute;
@@ -292,3 +296,5 @@ footer{
     color: #70757a;
     text-decoration: underline;
 }
+
+/* Fin de clases del pie de pagina */

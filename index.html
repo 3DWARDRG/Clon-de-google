@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-google.css">
-    <link rel="stylesheet" href="./responsive-design.css">
-    <title>Google</title>
+    <title>Clon Google</title>
+    <!-- Referencias de fuente "ROBOTO" y icono de la pagina. -->
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-    <nav id="navegation-bar">
+    <header id="navegation-bar">
+        <!-- utilize dos elementos div, el primero para que se agruparan tanto elementos de texto como imagenes,añadiendo el segundo div para 
+        modificar el comportamiento de las imagenes que son diferentes al texto.  -->
         <div class="content-elements">
                 <p class="text-navegation-bar"><a class="link-text-navegation-bar" href="https://mail.google.com/mail/&ogbl">Gmail</a></p>
             <p class="text-navegation-bar"><a class="link-text-navegation-bar" href="https://www.google.com.co/imghp?hl=es-419&ogbl">Imagenes</a></p>
@@ -20,19 +25,23 @@
             <a class="link-profile-photo" href="https://accounts.google.com/SignOutOptions?hl=es-419&continue=https://www.google.com/" ><img class="profile-photo" src="/images/perfil.png" alt="photo-profile"></a> 
     </div>
     </div>
-    </nav>
+    </header>
     <main>
             <section class="box-logo">
-                <img class="logo-google" src="images\google-logo.png" alt="logo-google">
+                <img id="logo" src="images\google-logo.png" alt="logo-google">
             </section>
-            <form action="#">
+            <!-- añadi una seccion para contener todos los elementos de la barra de busqueda y sus respectivos botones. -->
+            <section id="form" action="#">
                 <div class="elements-search">
+                    <!-- Añadi una div para contener los elementos en el centro y evitar su deformacion al hacer zoom. -->
                     <div class="bar-search">
+                        <!-- Añadi un div para crear el efecto de barra de busqueda -->
                         <div class="box-image-search">
+                            <!-- Separe todo por cajas para un comportamiento mas uniforme, quizas algo excesivo. -->
                             <img class="image-search" src="images\image-search.png" alt="image-search">
                         </div>
                 <label class="box-seeker">
-                    <textarea name="sekker" id="seeker" rows="1"></textarea>
+                    <input name="sekker" id="input-search"></input>
                 </label>
                 <div class="elements-icons-search">
                     <a class="link-image-search-by-voice" href="#"><img class="image-search-by-voice" src="images\search-by-voice.png" alt="image-search-by-voice"></a>
@@ -40,17 +49,21 @@
                 </div>
             </div>
                     <label class="bottoms">
-                        <input  class="bottom-google" id="google" type="submit" name="google" role="button" value="Buscar con Google">
-                        <input class="bottom-lucky" id="google" type="submit" name="google" role="button" value="Voy a tener suerte">
+                        <!-- Separe los botones de los demas elementos para darles el efecto de esta abajo de barra de busqueda,
+                        supongo que en este ejercicio es mejor usar un elemento a, aunque es mas comodo un input o bottom. -->
+                        <a class="btn-search" id="search" href="#">Buscar con Google</a>
+                        <a class="btn-search" id="lucky" href="#">Voy a tener suerte</a>
                     </label>
                 </div>
-            </form>
+            </section>
     </main>
     <footer>
+        <!-- Parte inferior de las referencias de la pagina y su respectiva informacion copiada de la pagina original. -->
         <div class="box-country">
         <p class="text-country">Colombia</p>
         </div>
         <div class="box-more-of-google">
+            <!-- Utilize dos elementos div para separar en cada esquina los elementos de manera uniforme. -->
             <div class="elements-left">
                 <p class="text-google"><a class="text-footer" href="https://about.google/?utm_source=google-CO&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre google</a></p>
                 <p class="text-google"><a class="text-footer" href="https://www.google.com/intl/es-419_co/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&fg=1">Publicidad</a></p>

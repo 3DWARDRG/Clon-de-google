@@ -84,12 +84,12 @@ body{
     justify-content: flex-end;
 }
 
-.logo-google{
+#logo{
     max-height: 35%;
     max-width: 25%;
 }
 
-form{
+#form{
     width: auto;
     padding: 0.5rem;
 }
@@ -130,7 +130,7 @@ form{
     height: 1rem;
 }
 
-#seeker{
+#input-search{
     height: 50%;
     width: 10rem;
     margin-bottom: 0.025rem;
