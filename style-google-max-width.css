@@ -1,0 +1,179 @@
+@media screen and (max-width:400px){
+
+body{
+    height: auto;
+    width: auto;
+}
+
+#navegation-bar{
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.143rem;
+    flex-wrap: nowrap;
+    padding-top: 0;
+}
+
+.content-elements{
+    padding-left: 0.571rem;
+    padding-right: 0.143rem;
+    display: flex;
+    align-items: center;
+}
+
+.text-navegation-bar{
+    padding: 0.179rem;
+    margin: 0;
+    padding-left: 0.357rem;
+    display: flex;
+    align-items: center;
+}
+
+.link-text-navegation-bar{
+    text-decoration: none;
+    font-size: 0.286rem;
+}
+
+.box-elements-icons-navegation-bar{
+    display: flex;
+    padding: 0.143rem;
+    padding-top: 0;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+.icon-apps{
+    height: 0.571rem;
+    width: 0.571rem;
+    padding: 0.214rem;
+}
+
+.link-icon-apps{
+    margin: 0;
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+
+}
+
+.profile-photo{
+    width: 10px;
+    height: 10px;
+    border-radius: 1rem;
+    padding: 0.143rem;
+}
+
+.link-profile-photo{
+    margin: 0;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 0.143rem;
+    align-items: center;
+    margin-left: 0.143rem;
+}
+
+.box-logo{
+    display: flex;
+    width: 100%;
+    min-height: 5rem;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo-google{
+    max-height: 35%;
+    max-width: 25%;
+}
+
+form{
+    width: auto;
+    padding: 0.5rem;
+}
+
+.elements-search{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar-search{
+    display: flex;
+    width: 60%;
+    max-height: 1rem;
+    justify-content: space-between;
+    border-radius: 2rem;
+    padding-top: 0.180rem;
+    padding-left: 0.500rem;
+    padding-right: 0.571rem;
+    border: 0.071rem solid rgb(235, 235, 235);
+    margin-top: 0.429rem;
+}
+
+.box-image-search{
+    display: flex;
+    width: auto;
+
+}
+
+.image-search{
+    width: 0.714rem;
+    height: 0.714rem;
+    margin: 0;
+}
+
+.box-seeker{
+    height: 1rem;
+}
+
+#seeker{
+    height: 50%;
+    width: 10rem;
+    margin-bottom: 0.025rem;
+    border-color: #ffffff;
+    padding: 0.100rem;
+    padding-top: 0;
+    resize: none;
+    font-size: 7px;
+    min-width: none;
+    max-width: 30.857rem;
+}
+
+.elements-icons-search{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+.image-search-by-image{
+    width: 0.514rem;
+    height: 0.514rem;
+    padding: 0.150rem;
+}
+
+.link-image-search-by-image{
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding: 0;
+}
+
+.image-search-by-voice{
+    width: 0.514rem;
+    height: 0.514rem;
+    padding: 0.150rem;
+}
+
+.link-image-search-by-voice{
+    width: auto;
+    height: auto;
+    align-items: center;
+    padding: 0;
+}
+
+}
